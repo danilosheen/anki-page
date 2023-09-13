@@ -172,6 +172,10 @@
   .container-nav-mobile {
     display: none;
   }
+
+  .container-nav-mobile.active{
+    display: none;
+  }
 }
 
 /* CSS para resolução menor que 920px */
