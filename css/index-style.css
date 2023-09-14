@@ -4,20 +4,37 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Nunito", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.span-verde {
+  color: #00eb84;
+}
+
+#div-inicio-beneficios {
+  padding: 50px;
+  background-color: #00171d;
+}
+
+#div-inicio-metodologia {
+  background-color: #e5e5e5;
+  padding: 25px;
 }
 
 @keyframes fadeIn {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 100;
   }
 }
 
+/* 02546c */
 /* nav topo */
 .topo {
-  background-color: #180a29;
+  background-color: #00171d;
   height: 100px;
   width: 100%;
   display: flex;
@@ -29,12 +46,14 @@
 
 .content-topo {
   width: 70%;
+  height: 60px;
   display: flex;
   margin: 0 auto;
   justify-content: space-between;
+  align-items: center;
 }
 
-.topo .content-topo img {
+.logo-topo {
   height: 60px;
   transition: transform 0.3s;
 }
@@ -75,7 +94,7 @@
 
 .link-button-topo:hover {
   border: 2px solid #00eb84;
-  background-color: #180a29;
+  background-color: #00171d;
   color: white !important;
   padding: 8px 13px;
 }
@@ -143,17 +162,16 @@
 .container-nav-mobile.active {
   display: block;
 }
+
 /* conteudo principal */
 
 /* bg radial */
 .container {
   height: 100vh;
-  background: radial-gradient(
-    circle,
-    rgba(41, 16, 71, 1) 0%,
-    rgba(31, 13, 52, 1) 35%,
-    rgba(24, 10, 41, 1) 100%
-  );
+  background: radial-gradient(circle,
+      rgba(0, 82, 106, 1) 0%,
+      rgba(0, 51, 66, 1) 52%,
+      rgba(0, 30, 40, 1) 100%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -167,7 +185,7 @@
 }
 
 /* container texto */
-.container-texto{
+.container-texto {
   display: block;
   flex-direction: column;
   width: 50%;
@@ -187,7 +205,7 @@
   margin: 20px 0;
 }
 
-.div-button{
+.div-button {
   display: block;
   width: 300px;
 }
@@ -206,16 +224,16 @@
 }
 
 /* container video */
-.container-video{
+.container-video {
   width: 50%;
   position: relative;
 }
 
-.container-video .img-fundo{
-  width: 550px;
+.container-video .img-fundo {
+  width: 100%;
 }
 
-.container-span{
+.container-span {
   position: absolute;
   bottom: 120px;
   left: 130px;
@@ -225,9 +243,159 @@
   gap: 20px;
 }
 
-.texto-span-video{
+.texto-span-video {
   color: white;
   font-size: 16px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+  position: relative;
+  margin: 10% auto;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 80vw;
+  height: 60vh;
+}
+
+.modal-content iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.close {
+  position: absolute;
+  top: -40px;
+  right: -10px;
+  padding: 10px;
+  cursor: pointer;
+  color: white;
+  font-size: 20px;
+}
+
+
+/* vantagens */
+
+.container-vantagens {
+  width: 100%;
+  background-color: #00171d;
+  height: 560px;
+
+}
+
+.content-vantagens {
+  margin: 0 auto;
+  width: 70%;
+  text-align: center;
+  color: white;
+}
+
+.content-vantagens h2 {
+  font-size: 42px;
+  padding-top: 40px;
+  padding-bottom: 30px;
+
+}
+
+.content-vantagens p {
+  line-height: 30px;
+  margin-bottom: 50px;
+}
+
+.container-cards-vantagens {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-vantagens {
+  height: 330px;
+  width: 200px;
+  background-color: #00546c;
+  border-radius: 5px;
+  text-align: start;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.card-vantagens p {
+  line-height: 20px;
+  color: #00eb84;
+  font-weight: 300;
+}
+
+.div-card-img {
+  height: 200px;
+  width: 100%;
+
+}
+
+.div-card-img img {
+  width: 120px;
+}
+
+.div-line {
+  border: 2px solid #00eb84;
+  width: 50%;
+  margin: 10px 0px 20px 0px;
+
+}
+
+/* metodologia */
+
+.container-metodologia {
+  background-color: #e5e5e5;
+  width: 100%;
+  padding: 150px 0;
+}
+
+.content-metodologia {
+  display: flex;
+  width: 70%;
+  gap: 70px;
+  margin: 0 auto;
+}
+
+.div-video-metodologia {
+  width: 50%;
+}
+
+.texto-metodologia {
+  width: 50%;
+}
+
+.texto-metodologia h2 {
+  font-size: 42px;
+  font-weight: bold;
+  color: #00546c;
+  margin-bottom: 30px;
+}
+
+.texto-metodologia p {
+  color: #00546c;
+  margin-bottom: 60px;
+}
+
+.texto-metodologia a {
+  background-color: #00eb84;
+  color: #00171d;
+  padding: 13px 50px;
+  border-radius: 35px;
+  text-decoration: none;
+  margin-top: 40px;
 }
 
 /* rodape */
@@ -239,8 +407,8 @@
 
 /* media queries */
 
-/* CSS para resolução maior que 920px */
-@media screen and (min-width: 920px) {
+/* CSS para resolução maior que 932px */
+@media screen and (min-width: 932px) {
   .container-nav-mobile {
     display: none;
   }
@@ -251,34 +419,25 @@
 }
 
 /* CSS para resolução menor que 920px */
-@media screen and (max-width: 919px) {
-  .lista-nav {
-    display: none !important; /* Ocultar o menu regular */
-  }
 
-  .menu-toggle {
-    display: block; /* Mostrar o botão do menu hamburguer */
-  }
-}
 
 @media screen and (max-width: 1580px) {
-
-  .container-video .img-fundo{
+  /* .container-video .img-fundo {
     width: 400px;
-  }
+  } */
 
-  .container-span{
+  .container-span {
     position: absolute;
     bottom: 90px;
     left: 80px;
     gap: 10px;
   }
 
-  .container-span a img{
+  .container-span a img {
     width: 60px;
   }
 
-  .texto-span-video{
+  .texto-span-video {
     font-size: 14px;
   }
 }
@@ -300,7 +459,6 @@
   .container-conteudo-link {
     margin-top: 30px;
   }
-
 }
 
 @media screen and (max-width: 1000px) {
@@ -309,10 +467,91 @@
     color: white;
     line-height: 40px;
   }
-  /* .container-conteudo{
+}
+
+@media screen and (max-width: 931px) {
+
+  .lista-nav {
+    display: none !important;
+    /* Ocultar o menu regular */
+  }
+
+  .menu-toggle {
+    display: block;
+    /* Mostrar o botão do menu hamburguer */
+  }
+
+
+  .topo {
+    height: 60px;
+  }
+
+  .logo-topo {
+    height: 40px !important;
+  }
+
+  .container-span {
+    bottom: 0px;
+    left: 0px;
+    gap: 5px;
+  }
+
+  .texto-span-video {
+    color: white;
+    font-size: 16px;
+  }
+
+  .close {
+    position: absolute;
+    top: -15px;
+    right: 0px;
+    padding: 10px;
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+  }
+
+  .container-conteudo {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    text-align: center;
+    width: 80%;
+  }
+
+  .container-texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .container-vantagens {
+    height: 100%;
+    padding-bottom: 100px;
+
+  }
+
+  .content-vantagens h2 {
+    font-size: 28px;
+  }
+
+  .container-metodologia {
+    padding: 100px 0 !important;
+  }
+
+  .content-metodologia {
+    width: 80%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 60px;
-  } */
+    text-align: center;
+
+  }
+
+  .div-video-metodologia,
+  .texto-metodologia {
+    width: 100%;
+  }
 }
