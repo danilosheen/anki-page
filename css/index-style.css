@@ -109,7 +109,7 @@
 .container-nav-mobile {
   height: 300px;
   width: 200px;
-  background-color: #c1c1c1;
+  background-color: white;
   margin-top: 100px;
   border-radius: 35px 0 35px 35px;
   animation-name: fadeIn;
@@ -145,7 +145,8 @@
 }
 /* conteudo principal */
 
-.conteudo {
+/* bg radial */
+.container {
   height: 100vh;
   background: radial-gradient(
     circle,
@@ -158,6 +159,77 @@
   justify-content: center;
 }
 
+.container-conteudo {
+  width: 70%;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+/* container texto */
+.container-texto{
+  display: block;
+  flex-direction: column;
+  width: 50%;
+  height: 100%;
+}
+
+.container-conteudo h1 {
+  font-size: 48px;
+  color: white;
+  line-height: 60px;
+}
+
+.container-conteudo p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: white;
+  margin: 20px 0;
+}
+
+.div-button{
+  display: block;
+  width: 300px;
+}
+
+.container-conteudo-link {
+  background-color: #00eb84;
+  text-align: center;
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  color: #180a29;
+  padding: 16px 50px;
+  border-radius: 35px;
+  margin-top: 40px;
+  text-decoration: none;
+}
+
+/* container video */
+.container-video{
+  width: 50%;
+  position: relative;
+}
+
+.container-video .img-fundo{
+  width: 550px;
+}
+
+.container-span{
+  position: absolute;
+  bottom: 120px;
+  left: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.texto-span-video{
+  color: white;
+  font-size: 16px;
+}
+
 /* rodape */
 
 .rodape {
@@ -168,18 +240,18 @@
 /* media queries */
 
 /* CSS para resolução maior que 920px */
-@media (min-width: 920px) {
+@media screen and (min-width: 920px) {
   .container-nav-mobile {
     display: none;
   }
 
-  .container-nav-mobile.active{
+  .container-nav-mobile.active {
     display: none;
   }
 }
 
 /* CSS para resolução menor que 920px */
-@media (max-width: 919px) {
+@media screen and (max-width: 919px) {
   .lista-nav {
     display: none !important; /* Ocultar o menu regular */
   }
@@ -187,4 +259,60 @@
   .menu-toggle {
     display: block; /* Mostrar o botão do menu hamburguer */
   }
+}
+
+@media screen and (max-width: 1580px) {
+
+  .container-video .img-fundo{
+    width: 400px;
+  }
+
+  .container-span{
+    position: absolute;
+    bottom: 90px;
+    left: 80px;
+    gap: 10px;
+  }
+
+  .container-span a img{
+    width: 60px;
+  }
+
+  .texto-span-video{
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 1195px) {
+  .container-conteudo h1 {
+    font-size: 36px;
+    color: white;
+    line-height: 50px;
+  }
+
+  .container-conteudo p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: white;
+    margin: 15px 0;
+  }
+
+  .container-conteudo-link {
+    margin-top: 30px;
+  }
+
+}
+
+@media screen and (max-width: 1000px) {
+  .container-conteudo h1 {
+    font-size: 28px;
+    color: white;
+    line-height: 40px;
+  }
+  /* .container-conteudo{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 60px;
+  } */
 }
