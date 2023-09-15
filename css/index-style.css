@@ -22,8 +22,8 @@
 }
 
 #div-inicio-study {
-  background-color: #00171d;;
-  padding: 10px;
+  background-color: #e5e5e5;
+  padding: 100px;
 }
 
 @keyframes fadeIn {
@@ -370,7 +370,7 @@
 .container-metodologia {
   background-color: #e5e5e5;
   width: 100%;
-  padding: 150px 0;
+  padding: 150px 0 0 0;
 }
 
 .content-metodologia {
