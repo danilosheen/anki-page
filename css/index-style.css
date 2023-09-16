@@ -268,7 +268,7 @@
   font-size: 16px;
   color: #00eb84;
   font-weight: 700;
-  text-shadow: 0 2px 10px #000;
+  /* text-shadow: 0 2px 10px #000; */
 }
 
 .modal {
