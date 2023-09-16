@@ -10,7 +10,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
 
-
 //video modal
 const openVideoBtn = document.getElementById("openVideo");
 const videoModal = document.getElementById("videoModal");
@@ -44,8 +43,6 @@ function fecharAoClicarFora(event) {
     fecharVideo();
   }
 }
-
-
 
 
 // Função para rolar suavemente até a seção desejada
