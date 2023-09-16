@@ -1,6 +1,6 @@
 // função para exibir o menu hamburguer
 
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", () => {
     const menuToggle = document.querySelector(".menu-toggle");
     const menuNav = document.querySelector(".container-nav-mobile");
   
@@ -65,15 +65,14 @@ document.addEventListener("click", function (event) {
 
 
 // faq
-
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", () => {
   const faqItems = document.querySelectorAll(".faq-item");
 
   faqItems.forEach(function (item) {
       const question = item.querySelector(".faq-question");
       const answer = item.querySelector(".faq-answer");
 
-      question.addEventListener("click", function () {
+      question.addEventListener("click", () => {
           item.classList.toggle("open");
           answer.style.display = item.classList.contains("open") ? "block" : "none";
       });

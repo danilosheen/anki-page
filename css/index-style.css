@@ -247,6 +247,10 @@
   width: 100%;
 }
 
+.button-play-video img{
+
+}
+
 .container-span {
   position: absolute;
   bottom: 120px;
@@ -258,8 +262,10 @@
 }
 
 .texto-span-video {
-  color: white;
   font-size: 16px;
+  color: #00eb84;
+  font-weight: 700;
+  text-shadow: 0 2px 10px #000;
 }
 
 .modal {
@@ -359,7 +365,8 @@
 }
 
 .div-card-img img {
-  width: 120px;
+  padding: 20px 0;
+  width: 100px;
 }
 
 .div-line {
@@ -854,10 +861,12 @@
     gap: 5px;
   }
 
-  .texto-span-video {
-    color: white;
-    font-size: 16px;
-  }
+  /* .texto-span-video {
+    font-size: 14px;
+    color: #00eb84;
+    font-weight: 700;
+    text-shadow: 0 2px 10px #000;
+  } */
 
   .close {
     position: absolute;
