@@ -18,7 +18,7 @@
 
 #div-inicio-metodologia {
   background-color: #e5e5e5;
-  padding: 25px;
+  padding: 80px;
 }
 
 #div-inicio-study {
@@ -342,7 +342,7 @@
 }
 
 .card-vantagens {
-  height: 330px;
+  height: 370px;
   width: 200px;
   background-color: #00546c;
   border-radius: 15px;
@@ -355,18 +355,19 @@
 .card-vantagens p {
   line-height: 20px;
   color: #00eb84;
-  font-weight: 300;
+  font-weight: 200;
+  font-size: 14px;
 }
 
 .div-card-img {
-  height: 200px;
+  height: 180px;
   width: 200px;
 
 }
 
 .div-card-img img {
   padding: 20px 0;
-  width: 100px;
+  width: 80px;
 }
 
 .div-line {
@@ -612,6 +613,7 @@
 
 .aspas-depoimento {
   margin-top: -130px;
+  width: 70px;
 }
 
 .box-nome-card-depoimento {
@@ -738,12 +740,22 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 15px;
 }
 
 .content-rodape a{
   color: white;
   text-decoration: none;
   font-weight: bold;
+}
+
+.icone-social{
+  height: 20px;
+}
+
+.links-rodape{
+  display: flex;
+  gap: 20px;
 }
 
 
@@ -908,6 +920,10 @@
     padding: 100px 0 !important;
   }
 
+  #div-inicio-metodologia{
+    padding: 25px;
+  }
+
   .content-metodologia {
     width: 80%;
     flex-direction: column;
@@ -987,7 +1003,10 @@
     text-align: center;
   }
 
-
+  .content-rodape{
+    flex-direction: column;
+  }
+  
 
 
 }
