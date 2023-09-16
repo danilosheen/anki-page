@@ -62,3 +62,20 @@ document.addEventListener("click", function (event) {
     rolarParaDiv(id); // Chama a função para rolar suavemente até a seção
   }
 });
+
+
+// faq
+
+document.addEventListener("DOMContentLoaded", function () {
+  const faqItems = document.querySelectorAll(".faq-item");
+
+  faqItems.forEach(function (item) {
+      const question = item.querySelector(".faq-question");
+      const answer = item.querySelector(".faq-answer");
+
+      question.addEventListener("click", function () {
+          item.classList.toggle("open");
+          answer.style.display = item.classList.contains("open") ? "block" : "none";
+      });
+  });
+});
