@@ -247,21 +247,27 @@
 /* container video */
 .container-video {
   width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
+
 }
 
 .container-video .img-fundo {
   width: 100%;
 }
 
-.container-span {
+.container-span{
   position: absolute;
-  bottom: 120px;
-  left: 130px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
+  width: 20%;
+  top: 50%;
+  left: 50%;
+}
+
+.container-span a img{
+  width: 100%;
 }
 
 .texto-span-video {
@@ -428,7 +434,11 @@
 
 .container-study {
   background-color: #00171d;
-  height: 530px;
+  height: 560px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 }
 
 .content-study {
@@ -441,7 +451,7 @@
 }
 
 .box-study {
-  width: 350px;
+  width: 360px;
   height: 500px;
   color: white;
 }
@@ -497,6 +507,12 @@
 .font-span-box-3 {
   font-size: 20px;
   font-weight: bold;
+}
+
+.div-button-study{
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 /* para quem */
@@ -591,6 +607,7 @@
   flex-direction: column;
   align-items: center;
   margin-bottom: 25px;
+  position: relative;
 }
 
 .box-texto-card-depoimento {
@@ -600,13 +617,15 @@
   gap: 40px;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   padding-top: 60px;
 }
 
 .aspas-depoimento {
-  margin-top: -130px;
+  /* top: -30px;
+  left: 35%; */
+  top: -40px;
   width: 70px;
+  position: absolute;
 }
 
 .box-nome-card-depoimento {
@@ -761,26 +780,42 @@
   }
 }
 
-/* CSS para resolução menor que 920px */
-
-@media screen and (max-width: 1580px) {
-  .container-span {
-    position: absolute;
-    bottom: 90px;
-    left: 80px;
-    gap: 10px;
+@media screen and (max-width: 1400px) {
+  
+  
+  .container-study{
+    height: 100%;
+    padding-bottom: 40px;
+  }
+  .content-study{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
   }
 
-  .container-span a img {
-    width: 60px;
+  .div-button-study{
+    padding-top: 20px;
   }
 
-  .texto-span-video {
-    font-size: 14px;
+  .box-1{
+    height: 400px;
+    padding: 0;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .box-3{
+    height: 700px;
+    padding: 0;
+    text-align: start;
+    width: 100%;
   }
 }
 
 @media screen and (max-width: 1195px) {
+
   .container-conteudo h1 {
     font-size: 36px;
     color: white;
@@ -821,6 +856,7 @@
     color: white;
     line-height: 40px;
   }
+
 }
 
 @media screen and (max-width: 931px) {
@@ -842,10 +878,12 @@
     height: 30px !important;
   }
 
-  .container-span {
-    bottom: 0px;
-    left: 0px;
-    gap: 5px;
+  .box-1{
+    padding-right: 0px !important;
+  }
+
+  .box-3{
+    padding-left: 0px !important
   }
 
   /* .texto-span-video {
@@ -872,6 +910,7 @@
     gap: 50px;
     text-align: center;
     width: 80%;
+    padding-top: 30px;
   }
 
   .container-texto {
