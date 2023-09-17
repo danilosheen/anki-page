@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-
+//------------------------------------------------
 //video modal
 const openVideoBtn = document.getElementById("openVideo");
 const videoModal = document.getElementById("videoModal");
@@ -43,7 +43,7 @@ function fecharAoClicarFora(event) {
     fecharVideo();
   }
 }
-
+//------------------------------------------------
 
 // Função para rolar suavemente até a seção desejada
 function rolarParaDiv(id) {
@@ -75,3 +75,38 @@ document.addEventListener("DOMContentLoaded", () => {
       });
   });
 });
+
+// ------------------------------
+
+// Lista de chaves e seus links correspondentes
+const listaDeChaves = {
+  "chave1": "https://www.google.com/",
+  "chave2": "https://www.youtube.com/",
+  // Adicione mais chaves e links conforme necessário
+};
+
+// Função para verificar a chave e redirecionar para o link correto
+function verificarChave() {
+  const chaveInput = document.getElementById("chaveInput");
+  const chave = chaveInput.value.toLowerCase(); // Converter para letras minúsculas
+  const link = listaDeChaves[chave];
+  const feedbackText = document.getElementById("feedbackText");
+
+  if (link) {
+      window.location.href = link; // Redireciona para o link correspondente
+  } else {
+      chaveInput.classList.add("error"); // Adiciona a classe "error" para estilizar a borda em vermelho
+      chaveInput.value = ""; // Limpa o texto do input
+      feedbackText.textContent = "Chave incorreta. Tente novamente."; // Exibe o texto de feedback
+      setTimeout(() => {
+          chaveInput.classList.remove("error"); // Remove a classe "error" após um tempo
+          feedbackText.textContent = ""; // Limpa o texto de feedback após um tempo
+      }, 3000); // 3000 milissegundos = 3 segundos (ajuste conforme necessário)
+  }
+}
+
+// Adicione um ouvinte de eventos ao botão
+document.getElementById("obterDescontoBtn").addEventListener("click", verificarChave);
+
+
+

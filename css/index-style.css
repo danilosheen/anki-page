@@ -704,11 +704,69 @@
   color: #00171d;
 }
 
+/* descontos */
+
+.container-desconto{
+  width: 100%;
+  background-color: #e5e5e5;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  display: flex;
+  justify-content: center;
+}
+
+.content-desconto{
+  width: 70%;
+  padding: 80px;
+  text-align: center;
+
+}
+
+.content-desconto h2{
+  font-size: 42px;
+  color: #00171d;
+  margin-bottom: 20px;
+}
+
+.content-desconto input{
+  padding: 13px 10px;
+  width: 300px;
+  text-align: left;
+  border-radius: 5px;
+  border:1px solid #00eb84;
+  font-size: 16px;
+}
+
+.content-desconto button{
+  padding: 13px 50px;
+  border-radius: 35px;
+  border: none;
+  background-color: #00eb84;
+  margin-top: 30px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #00171d;
+
+}
+
+#chaveInput {
+  border: 2px solid #ccc;
+  transition: border-color 0.3s;
+}
+
+#chaveInput.error {
+  border-color: red;
+}
+
+#feedbackText {
+  color: red;
+}
+
 /* final */
 
 .container-final {
   width: 100%;
-  background-color: #e5e5e5;
+  background-color: white;
   padding: 60px 0 50px 0;
 }
 
@@ -731,6 +789,8 @@
   text-decoration: none;
   color: #00171d;
 }
+
+
 
 /* rodape */
 
@@ -974,6 +1034,12 @@
     width: 60%;
   }
 
+  .content-desconto{
+    width: 100%;
+  }
+
+ 
+
   .faq {
     max-width: 80%;
   }
@@ -1011,6 +1077,19 @@
   .container-para-quem {
     padding: 100px 0;
     text-align: center;
+  }
+
+  .content-desconto h2{
+    font-size: 32px;
+  }
+
+  .content-desconto input{
+    width: 80%;
+  }
+
+  .content-desconto button{
+    padding: 13px 25px;
+
   }
 
   .content-rodape {
