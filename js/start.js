@@ -1,15 +1,3 @@
-// função para exibir o menu hamburguer
-document.addEventListener("DOMContentLoaded", () => {
-    const menuToggle = document.querySelector(".menu-toggle");
-    const menuNav = document.querySelector(".container-nav-mobile");
-  
-    menuToggle.addEventListener("click", function () {
-      menuNav.classList.toggle("active");
-    });
-  });
-
-//------------------------------------------------
-
 // Função para rolar suavemente até a seção desejada
 function rolarParaDiv(id) {
   var elemento = document.getElementById(id);
@@ -24,3 +12,16 @@ document.addEventListener("click", function (event) {
     rolarParaDiv(id); // Chama a função para rolar suavemente até a seção
   }
 });
+
+//------------------------------------------------
+
+// função para exibir o menu hamburguer
+document.addEventListener("DOMContentLoaded", () => {
+    const menuToggle = document.querySelector(".menu-toggle");
+    const menuNav = document.querySelector(".container-nav-mobile");
+  
+    menuToggle.addEventListener("click", function () {
+      menuNav.classList.toggle("active");
+    });
+  });
+
