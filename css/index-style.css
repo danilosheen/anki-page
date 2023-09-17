@@ -191,6 +191,18 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+}
+
+.button-descont-nav{
+  /* position: absolute; */
+  position: fixed;
+  left: 30px;
+  bottom: 30px;
+}
+
+.button-descont-nav a img{
+  width: 70px;
 }
 
 .container-conteudo {
@@ -1090,6 +1102,10 @@
   .content-desconto button{
     padding: 13px 25px;
 
+  }
+
+  .button-descont-nav a img{
+    width: 50px;
   }
 
   .content-rodape {
