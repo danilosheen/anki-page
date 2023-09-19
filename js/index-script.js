@@ -53,8 +53,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // Lista de chaves e seus links correspondentes
 const listaDeChaves = {
-  "chave1": "https://www.google.com/",
-  "chave2": "https://www.youtube.com/",
+  "trechos": "https://www.google.com/",
+  "series": "https://www.youtube.com/",
   // Adicione mais chaves e links conforme necessário
 };
 

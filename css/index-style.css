@@ -409,8 +409,10 @@
 
 .content-metodologia {
   display: flex;
-  width: 70%;
-  gap: 70px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
   margin: 0 auto;
 }
 
@@ -420,6 +422,7 @@
 
 .texto-metodologia {
   width: 50%;
+
 }
 
 .texto-metodologia h2 {
@@ -491,8 +494,8 @@
 .box-2 img {
   /* height: 100%; */
   width: 100%;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
-    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  /* box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset; */
 }
 
 .box-3 {
