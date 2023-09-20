@@ -61,7 +61,7 @@
       opacity: 0.7;
   }
   50% {
-      transform: scale(1.03);
+      transform: scale(1.1);
       opacity: 1;
   }
   100% {
@@ -299,13 +299,8 @@
 
 .button-play{
 
-  /* transition: transform 0.3s; */
   animation: pulse 2s infinite;
 }
-
-/* .button-play:hover {
-  transform: scale(1.03);
-} */
 
 .container-span{
   position: absolute;
