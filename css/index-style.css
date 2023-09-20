@@ -1129,6 +1129,10 @@
     text-align: center;
   }
 
+  .container-metodologia {
+    padding: 50px 0 !important;
+  }
+
   .content-desconto h2{
     font-size: 32px;
   }
