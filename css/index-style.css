@@ -270,6 +270,15 @@
 
 .container-video .img-fundo {
   width: 80%;
+  
+}
+
+.button-play{
+  transition: transform 0.3s;
+}
+
+.button-play:hover {
+  transform: scale(1.03);
 }
 
 .container-span{
@@ -601,7 +610,7 @@
 
 .content-depoimentos h2 {
   font-size: 42px;
-  color: #00171d;
+  color: #00546c;
   text-align: center;
   margin-bottom: 70px;
 }
@@ -1088,6 +1097,10 @@
 
   #div-inicio-study {
     padding: 10px;
+  }
+  
+  .card-3{
+    display: none;
   }
 
   .container-para-quem {
