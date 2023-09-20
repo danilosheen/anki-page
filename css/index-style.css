@@ -269,11 +269,12 @@
 }
 
 .container-video .img-fundo {
-  width: 80%;
+  width: 100%;
   
 }
 
 .button-play{
+
   transition: transform 0.3s;
 }
 
@@ -283,9 +284,9 @@
 
 .container-span{
   position: absolute;
-  width: 20%;
-  top: 50%;
-  left: 50%;
+  width: 15%;
+  top: 33%;
+  left: 42%;
 }
 
 .container-span a img{
