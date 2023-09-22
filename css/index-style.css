@@ -480,7 +480,7 @@
 
 .container-study {
   background-color: #00171d;
-  height: 560px;
+  height: 700px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -664,6 +664,7 @@
   flex-direction: column;
   align-items: center;
   padding-top: 60px;
+  text-align: center;
 }
 
 .aspas-depoimento {
