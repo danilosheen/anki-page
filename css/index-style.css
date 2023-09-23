@@ -3,9 +3,24 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Nunito", sans-serif;
+  font-family: "Nunito", Arial, Helvetica, sans-serif;
   scroll-behavior: smooth;
 }
+
+/* Defina a fonte personalizada com @font-face */
+@font-face {
+  font-family: "Nunito";
+  src: url('../static/Nunito-Medium.ttf') format('woff2');
+  font-weight: 500;
+  font-display: swap;
+}
+
+/* Use a pilha de fontes genéricas como fallback */
+body {
+  font-family: "Nunito", Arial, Helvetica, sans-serif;
+  /* Outros estilos de texto aqui */
+}
+
 
 .span-verde {
   color: #00eb84;
