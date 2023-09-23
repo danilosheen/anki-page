@@ -53,8 +53,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // Lista de chaves e seus links correspondentes
 const listaDeChaves = {
-  "trechos": "https://www.google.com/",
-  "series": "https://www.youtube.com/",
+  "trechos": "https://pay.kiwify.com.br/PYRmcpA",
+  "series": "https://pay.kiwify.com.br/PYRmcpA",
   // Adicione mais chaves e links conforme necessário
 };
 
