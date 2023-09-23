@@ -1,11 +1,23 @@
+@font-face {
+  font-family: "Nunito";
+  src: url('../static/Nunito-Regular.woff2') format('woff2');
+  font-display: swap;
+}
+
 /* reset css */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Nunito", Arial, Helvetica, sans-serif;
+}
+
+/* Adicione a propriedade scroll-behavior conforme necessário */
+html {
   scroll-behavior: smooth;
 }
+
+
 
 .span-verde {
   color: #00eb84;
