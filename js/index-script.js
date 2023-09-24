@@ -53,8 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // Lista de chaves e seus links correspondentes
 const listaDeChaves = {
-  "trechos": "https://pay.kiwify.com.br/PYRmcpA",
-  "series": "https://pay.kiwify.com.br/PYRmcpA",
+  "cronograma": "https://pay.kiwify.com.br/PYRmcpA",
   // Adicione mais chaves e links conforme necessário
 };
 
@@ -80,6 +79,15 @@ function verificarChave() {
 
 // Adicione um ouvinte de eventos ao botão
 document.getElementById("obterDescontoBtn").addEventListener("click", verificarChave);
+
+// Adicione um ouvinte de eventos ao campo de entrada "chaveInput"
+const chaveInput = document.getElementById("chaveInput");
+chaveInput.addEventListener("keydown", function(event) {
+  if (event.key === "Enter") {
+    verificarChave(); // Chama a função verificarChave quando a tecla Enter for pressionada
+  }
+});
+
 
 
 
