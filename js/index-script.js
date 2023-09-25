@@ -1,4 +1,3 @@
-//video modal
 const openVideoBtn = document.getElementById("openVideo");
 const videoModal = document.getElementById("videoModal");
 const videoFrame = document.getElementById("videoFrame");
@@ -8,7 +7,7 @@ openVideoBtn.addEventListener("click", () => {
 });
 
 function abrirVideo() {
-  videoFrame.style.display = "block";
+  videoFrame.src = "https://www.youtube.com/embed/lYEdc355rQU"; // Substitua pela URL do seu vídeo
   videoModal.style.display = "block";
 
   // Adicionar event listener para fechar o modal clicando fora dele
@@ -16,12 +15,9 @@ function abrirVideo() {
 }
 
 function fecharVideo() {
-  videoFrame.style.display = "none";
+  videoFrame.src = ""; // Limpar a URL do vídeo
   videoModal.style.display = "none";
-  
-  // Pausar o vídeo (se necessário)
-  videoFrame.src = videoFrame.src;
-  
+
   // Remover event listener para fechar o modal clicando fora dele
   document.removeEventListener("click", fecharAoClicarFora);
 }
@@ -32,7 +28,6 @@ function fecharAoClicarFora(event) {
   }
 }
 //------------------------------------------------
-
 
 // faq
 document.addEventListener("DOMContentLoaded", () => {
