@@ -8,8 +8,8 @@
 }
 
 @font-face {
-  font-family: "Nunito";
-  src: url('../static/Nunito-Regular.woff2') format('woff2');
+  font-family: "minhaFonte";
+  src: url('../static/Nunito-VariableFont_wght.ttf');
   font-display: swap;
 }
 /* Adicione a propriedade scroll-behavior conforme necessário */
@@ -18,7 +18,7 @@ html {
 }
 
 body{
-  font-family: "Nunito", Arial, Helvetica, sans-serif;
+  font-family: "minhaFonte";
 }
 
 
