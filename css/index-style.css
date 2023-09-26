@@ -18,6 +18,10 @@
   color: #00eb84;
 }
 
+.shadow-text{ 	
+  text-shadow: 0px 0px 3px rgba(65, 65, 65, 0.15);
+}
+
 #div-inicio-beneficios {
   padding: 50px;
   background-color: #00171d;
