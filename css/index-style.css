@@ -18,8 +18,13 @@
   color: #00eb84;
 }
 
+<<<<<<< HEAD
 .shadow-text{ 	
   text-shadow: 0px 0px 3px rgba(65, 65, 65, 0.15);
+=======
+.span-verde-escuro{
+  color: red;
+>>>>>>> b55ab88b3183e64a04f5d28e39d056aa09301bc5
 }
 
 #div-inicio-beneficios {
