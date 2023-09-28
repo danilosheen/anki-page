@@ -888,7 +888,7 @@
 /* media queries */
 
 /* CSS para resolução maior que 932px */
-@media screen and (min-width: 932px) {
+@media (min-width: 932px) {
   .container-nav-mobile {
     display: none;
   }
@@ -898,7 +898,7 @@
   }
 }
 
-@media screen and (max-width: 1400px) {
+@media (max-width: 1400px) {
   
   
   .container-study{
@@ -932,7 +932,7 @@
   }
 }
 
-@media screen and (max-width: 1195px) {
+@media (max-width: 1195px) {
 
   .container-conteudo h1 {
     font-size: 36px;
@@ -968,7 +968,7 @@
   }
 }
 
-@media screen and (max-width: 1000px) {
+@media (max-width: 1000px) {
   .container-conteudo h1 {
     font-size: 28px;
     color: white;
@@ -977,7 +977,7 @@
 
 }
 
-@media screen and (max-width: 931px) {
+@media (max-width: 931px) {
   .lista-nav {
     display: none !important;
     /* Ocultar o menu regular */
@@ -1107,7 +1107,7 @@
   }
 }
 
-@media screen and (max-width: 616px) {
+@media (max-width: 616px) {
   .container-conteudo-link {
     font-size: 14px;
     padding: 13px 20px;
