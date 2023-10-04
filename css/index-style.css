@@ -452,7 +452,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  width: 70%;
   text-align: center;
   margin: 0 auto;
 }
@@ -462,7 +462,7 @@
 }
 
 .texto-metodologia {
-  width: 50%;
+  width: 100%;
 
 }
 
