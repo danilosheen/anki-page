@@ -304,7 +304,7 @@
 }
 
 .container-video .img-fundo {
-  width: 100%;
+  width: 70%;
   
 }
 
@@ -316,8 +316,8 @@
 .container-span{
   position: absolute;
   width: 15%;
-  top: 25%;
-  left: 42%;
+  top: 27%;
+  left: 36%;
 }
 
 .container-span a img{
@@ -932,6 +932,15 @@
   }
 }
 
+@media (max-width: 1368px) {
+  .topo{
+    height: 80px;
+  }
+  .logo-topo{
+    height: 40px;
+  }
+}
+
 @media (max-width: 1195px) {
 
   .container-conteudo h1 {
@@ -1108,6 +1117,14 @@
 }
 
 @media (max-width: 616px) {
+
+  .menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+  }
+
   .container-conteudo-link {
     font-size: 14px;
     padding: 13px 20px;
