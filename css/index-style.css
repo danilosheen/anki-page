@@ -1120,7 +1120,7 @@
 @media (max-width: 616px) {
 
   div[vw].enabled{
-    display: none;
+    display: none !important;
   }
 
   .div-img-para-quem{
