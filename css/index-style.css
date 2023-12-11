@@ -388,8 +388,9 @@
 }
 
 .content-vantagens p {
+  max-width: 1024px;
   line-height: 30px;
-  margin-bottom: 50px;
+  margin: 0 auto 50px auto;
 }
 
 .container-cards-vantagens {
@@ -475,7 +476,8 @@
 
 .texto-metodologia p {
   color: #00546c;
-  margin-bottom: 60px;
+  max-width: 1024px;
+  margin: 0 auto 60px auto;
 }
 
 .texto-metodologia a {
@@ -885,6 +887,17 @@
   gap: 20px;
 }
 
+.fade-in {
+  opacity: 0; /* Começa com opacidade 0 para a animação */
+  transform: translateY(20px); /* Desloca para baixo para efeito de entrada */
+  transition: opacity 0.8s ease, transform 0.8s ease; /* Transições suaves */
+}
+
+.fade-in.in-view {
+  opacity: 1; /* Quando estiver visível na tela, opacidade volta para 1 */
+  transform: translateY(0); /* Retorna à posição inicial */
+}
+
 /* media queries */
 
 /* CSS para resolução maior que 932px */
@@ -1106,7 +1119,7 @@
     width: 100%;
   }
 
- 
+  
 
   .faq {
     max-width: 80%;
@@ -1158,9 +1171,9 @@
     padding: 10px;
   }
   
-  .card-3{
+  /* .card-3{
     display: none;
-  }
+  } */
 
   .container-para-quem {
     padding: 100px 0;
