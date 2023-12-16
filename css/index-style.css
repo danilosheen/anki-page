@@ -1209,4 +1209,11 @@
   .content-rodape {
     flex-direction: column;
   }
+
+  @media (max-width: 356px) {
+    .div-texto-para-quem a,
+    .content-final a{
+      padding: 13px 30px;
+    }
+  }
 }
