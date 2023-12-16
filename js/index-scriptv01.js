@@ -51,6 +51,7 @@ const listaDeChaves = {
   "indique": "https://pay.kiwify.com.br/PYRmcpA",
   "cronograma": "https://pay.kiwify.com.br/TbUfka9",
   "trechos25": "https://pay.kiwify.com.br/PYRmcpA?afid=b4AsGXQo",
+  "umtrecho": "https://pay.kiwify.com.br/PYRmcpA?afid=i4tuwJxd",
   // Adicione mais chaves e links conforme necessário
 };
 

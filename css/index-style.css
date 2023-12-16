@@ -304,7 +304,7 @@
 }
 
 .container-video .img-fundo {
-  width: 100%;
+  width: 70%;
   
 }
 
@@ -316,8 +316,8 @@
 .container-span{
   position: absolute;
   width: 15%;
-  top: 25%;
-  left: 42%;
+  top: 27%;
+  left: 36%;
 }
 
 .container-span a img{
@@ -388,8 +388,9 @@
 }
 
 .content-vantagens p {
+  max-width: 1024px;
   line-height: 30px;
-  margin-bottom: 50px;
+  margin: 0 auto 50px auto;
 }
 
 .container-cards-vantagens {
@@ -452,7 +453,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  width: 70%;
   text-align: center;
   margin: 0 auto;
 }
@@ -462,7 +463,7 @@
 }
 
 .texto-metodologia {
-  width: 50%;
+  width: 100%;
 
 }
 
@@ -475,7 +476,8 @@
 
 .texto-metodologia p {
   color: #00546c;
-  margin-bottom: 60px;
+  max-width: 1024px;
+  margin: 0 auto 60px auto;
 }
 
 .texto-metodologia a {
@@ -835,7 +837,7 @@
 }
 
 .content-final h2 {
-  font-size: 32px;
+  font-size: 29px;
   color: #00171d;
   margin-bottom: 50px;
 }
@@ -853,7 +855,7 @@
 /* rodape */
 
 .rodape {
-  padding: 65px 0 50px 0;
+  padding: 50px 0 50px 0;
   background-color: #00171d;
   text-align: center;
   color: white;
@@ -885,10 +887,21 @@
   gap: 20px;
 }
 
+.fade-in {
+  opacity: 0; /* Começa com opacidade 0 para a animação */
+  transform: translateY(20px); /* Desloca para baixo para efeito de entrada */
+  transition: opacity 0.8s ease, transform 0.8s ease; /* Transições suaves */
+}
+
+.fade-in.in-view {
+  opacity: 1; /* Quando estiver visível na tela, opacidade volta para 1 */
+  transform: translateY(0); /* Retorna à posição inicial */
+}
+
 /* media queries */
 
 /* CSS para resolução maior que 932px */
-@media screen and (min-width: 932px) {
+@media (min-width: 932px) {
   .container-nav-mobile {
     display: none;
   }
@@ -898,7 +911,7 @@
   }
 }
 
-@media screen and (max-width: 1400px) {
+@media (max-width: 1400px) {
   
   
   .container-study{
@@ -932,7 +945,16 @@
   }
 }
 
-@media screen and (max-width: 1195px) {
+@media (max-width: 1368px) {
+  .topo{
+    height: 80px;
+  }
+  .logo-topo{
+    height: 40px;
+  }
+}
+
+@media (max-width: 1195px) {
 
   .container-conteudo h1 {
     font-size: 36px;
@@ -952,11 +974,12 @@
   }
 
   .div-texto-para-quem h2 {
-    font-size: 32px;
+    font-size: 27px;
   }
 
   .content-para-quem {
     flex-direction: column;
+    width: 80%;
   }
 
   .div-img-para-quem {
@@ -968,7 +991,7 @@
   }
 }
 
-@media screen and (max-width: 1000px) {
+@media (max-width: 1000px) {
   .container-conteudo h1 {
     font-size: 28px;
     color: white;
@@ -977,7 +1000,7 @@
 
 }
 
-@media screen and (max-width: 931px) {
+@media (max-width: 931px) {
   .lista-nav {
     display: none !important;
     /* Ocultar o menu regular */
@@ -1096,7 +1119,7 @@
     width: 100%;
   }
 
- 
+  
 
   .faq {
     max-width: 80%;
@@ -1107,7 +1130,23 @@
   }
 }
 
-@media screen and (max-width: 616px) {
+@media (max-width: 616px) {
+
+  div[vw].enabled{
+    display: none !important;
+  }
+
+  .div-img-para-quem{
+    display: none;
+  }
+
+  .menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+  }
+
   .container-conteudo-link {
     font-size: 14px;
     padding: 13px 20px;
@@ -1132,9 +1171,9 @@
     padding: 10px;
   }
   
-  .card-3{
+  /* .card-3{
     display: none;
-  }
+  } */
 
   .container-para-quem {
     padding: 100px 0;
@@ -1146,7 +1185,7 @@
   }
 
   .content-desconto h2{
-    font-size: 32px;
+    font-size: 28px;
   }
 
   .content-desconto input{
