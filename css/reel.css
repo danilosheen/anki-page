@@ -8,13 +8,17 @@
 }
 
 @font-face {
-  font-family: 'minhaFonte';
+  font-family: "minhaFonte";
   font-display: swap;
-  src: url(../static/Nunito-Regular.woff2) format('woff2');
+  src: url(../static/Nunito-Regular.woff2) format("woff2");
 }
 
 .span-verde {
   color: #00eb84;
+}
+
+.span-azul {
+  color: #3ecef1;
 }
 
 /* Banner */
@@ -32,28 +36,28 @@
 
 } */
 
-.banner{
- width: 100%;
+.banner {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #19404c;
 }
 
-.imagem-banner{
-  width: 100%; 
+.imagem-banner {
+  width: 100%;
 }
 
-.texto-banner{
+.texto-banner {
   width: 80%;
   color: white;
   text-align: center;
   margin-top: -100px;
-
 }
 
 /* Formulário */
 
-.section-form{
+.section-form {
   height: 400px;
   width: 100%;
   background-color: #19404c;
@@ -62,13 +66,14 @@
   justify-content: center;
 }
 
-.formulario-box{
+.formulario-box {
   width: 90%;
   height: 320px;
+  max-width: 600px;
   /* margin: 0 auto; */
 }
 
-.form{
+.form {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -79,23 +84,23 @@
   border-radius: 8px;
 }
 
-.input-box{
+.input-box {
   width: 80%;
 }
 
-.input-box label{
-  color: #00eb84;
+.input-box label {
+  color: #3ecef1;
 }
 
-.input-field{
+.input-field {
   display: flex;
   gap: 15px;
   align-items: center;
-  border-bottom: 1px solid #00eb84;
+  border-bottom: 1px solid #3ecef1;
 }
 
-.input-field i{
-  color: #00eb84;
+.input-field i {
+  color: #3ecef1;
 }
 
 /* Cor de fundo do autocomplete */
@@ -111,56 +116,105 @@ input:-webkit-autofill {
 
 .input-name,
 .input-email,
-.input-tel{
-
+.input-tel {
   height: 40px;
   width: 100%;
   border: none;
   background-color: transparent;
   color: white;
-
 }
 
 .input-name:focus,
 .input-email:focus,
-.input-tel:focus{
+.input-tel:focus {
   outline: none;
 }
 
-.button-submit{
+.button-submit {
   width: 50%;
   padding: 8px 0;
-  background-color: #00eb84;
+  background-color: #3ecef1;
   border: none;
   border-radius: 8px;
 }
 
 /* Informações Reel */
 /* .informacao-reel{
-  
-} */
 
-@media (max-width: 320px){
-  .texto-banner{
-    font-size: 1rem;
+
+/* rodape */
+
+.rodape {
+  padding: 50px 0 50px 0;
+  background-color: #00171d;
+  text-align: center;
+  color: white;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.content-rodape {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.content-rodape a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.icone-social {
+  height: 20px;
+}
+
+.links-rodape {
+  display: flex;
+  gap: 20px;
+}
+
+@media (min-width: 320px) {
+  .texto-banner h2 {
+    font-size: 18px;
+  }
+  .content-rodape {
+    flex-direction: column;
   }
 }
-@media (max-width: 375px){
 
+@media (min-width: 375px) {
+  .texto-banner h2 {
+    font-size: 26px;
+  }
 }
-@media (max-width: 425px){
-
+@media (min-width: 425px) {
+  .texto-banner h2 {
+    font-size: 28px;
+    width: 80%;
+    margin: 0 auto;
+  }
 }
-@media (max-width: 768px){
-
+@media (min-width: 768px) {
+  .texto-banner h2 {
+    font-size: 32px;
+  }
+  .content-rodape {
+    flex-direction: row;
+  }
 }
-@media (max-width: 1024px){
-
+@media (min-width: 1024px) {
 }
-@media (max-width: 1440px){
-
+@media (min-width: 1440px) {
+  .texto-banner h2 {
+    font-size: 50px;
+  }
 }
-@media (min-width: 1441px){
-
+@media (min-width: 1441px) {
+  .texto-banner h2 {
+    font-size: 50px;
+  }
 }
-
