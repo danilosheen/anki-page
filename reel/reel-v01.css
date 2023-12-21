@@ -10,7 +10,7 @@
 @font-face {
   font-family: "minhaFonte";
   font-display: swap;
-  src: url("../static/Nunito-Regular.woff2") format("woff2");
+  src: url(./static/Nunito-Regular.woff2) format("woff2");
 }
 
 .span-verde {
