@@ -178,6 +178,10 @@ input:-webkit-autofill {
   text-align: center;
 }
 
+.img-listening{
+  width: 80%;
+}
+
 /* Reading */
 .card-reel-reading {
   max-width: 600px;
@@ -194,6 +198,10 @@ input:-webkit-autofill {
   margin-bottom: 30px;
   color: #3ecef1;
   text-align: center;
+}
+
+.img-reading{
+  width: 80%;
 }
 
 /* Writing */
@@ -214,6 +222,10 @@ input:-webkit-autofill {
   text-align: center;
 }
 
+.img-writing{
+  width: 80%;
+}
+
 /* Speaking */
 .card-reel-speaking {
   max-width: 600px;
@@ -230,6 +242,10 @@ input:-webkit-autofill {
   margin-bottom: 30px;
   color: #3ecef1;
   text-align: center;
+}
+
+.img-speaking{
+  width: 80%;
 }
 
 /* botão */
