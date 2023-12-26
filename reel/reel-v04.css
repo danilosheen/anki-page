@@ -263,6 +263,8 @@ input:-webkit-autofill {
   color: black;
   border-radius: 8px;
   padding: 10px 40px;
+  text-align: center;
+  font-size: 14px;
 }
 
 /* rodape */
