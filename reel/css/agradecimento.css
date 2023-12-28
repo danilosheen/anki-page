@@ -12,12 +12,12 @@
   src: url(../static/Nunito-Regular.woff2) format("woff2");
 }
 
-.span-azul{
+.span-azul {
   color: #3ecef1;
   font-weight: 600;
 }
 
-.container-agradecimento{
+.container-agradecimento {
   width: 100%;
   background-color: #19404c;
   color: white;
@@ -25,12 +25,12 @@
   padding: 30px 0;
 }
 
-.content-agradecimento{
+.content-agradecimento {
   width: 90%;
   margin: 0 auto;
 }
 
-.content-agradecimento h1{
+.content-agradecimento h1 {
   color: #3ecef1;
 }
 
@@ -67,11 +67,11 @@
   border-radius: 12px 12px 0 0;
 }
 
-#close-modal{
+#close-modal {
   text-align: right;
 }
 
-.link-modal{
+.link-modal {
   text-decoration: none;
   background-color: #3ecef1;
   border-radius: 8px;
@@ -83,7 +83,7 @@
   display: none;
 }
 
-#link-over-video{
+#link-over-video {
   text-decoration: none;
   background-color: #3ecef1;
   border-radius: 8px;
@@ -92,10 +92,7 @@
   display: none;
   width: 200px;
   margin: 30px auto;
-
-  
 }
-
 
 /* rodape */
 .rodape {
