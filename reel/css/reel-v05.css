@@ -10,7 +10,7 @@
 @font-face {
   font-family: "minhaFonte";
   font-display: swap;
-  src: url(./static/Nunito-Regular.woff2) format("woff2");
+  src: url(../static/Nunito-Regular.woff2) format("woff2");
 }
 
 .span-verde {
@@ -22,19 +22,6 @@
 }
 
 /* Banner */
-
-/* .banner{
-  width: 100vw;
-  height: 90vh;
-  background-image: url("../assets/novos_modelos_2.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  display: flex;
-  align-items: end;
-  justify-content: center;
-
-} */
 
 .banner {
   width: 100%;
@@ -56,7 +43,6 @@
 }
 
 /* Formulário */
-
 .section-form {
   height: 480px;
   width: 100%;

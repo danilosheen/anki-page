@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "minhaFonte";
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: "minhaFonte";
+  font-display: swap;
+  src: url(../static/Nunito-Regular.woff2) format("woff2");
+}
+
+.span-azul{
+  color: #3ecef1;
+}
+
+.container-agradecimento{
+  background-color: #19404c;
+  color: white;
+  text-align: center;
+  padding: 30px 0;
+  height: 100vh;
+}
+
+.container-agradecimento h1{
+  padding-bottom: 20px;
+  color: #3ecef1;
+}
+
+
+/* rodape */
+.rodape {
+  padding: 50px 0 50px 0;
+  background-color: #00171d;
+  text-align: center;
+  color: white;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.content-rodape {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.content-rodape a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.icone-social {
+  height: 20px;
+}
+
+.links-rodape {
+  display: flex;
+  gap: 20px;
+}
+
+@media (min-width: 320px) {
+  .content-rodape {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 768px) {
+  .content-rodape {
+    flex-direction: row;
+  }
+}
