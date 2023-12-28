@@ -17,16 +17,82 @@
 }
 
 .container-agradecimento{
+  width: 100%;
   background-color: #19404c;
   color: white;
   text-align: center;
   padding: 30px 0;
-  height: 100vh;
 }
 
-.container-agradecimento h1{
-  padding-bottom: 20px;
+.content-agradecimento{
+  width: 90%;
+  margin: 0 auto;
+}
+
+.content-agradecimento h1{
   color: #3ecef1;
+}
+
+.content-agradecimento p {
+  padding: 30px 0;
+  font-size: 20px;
+}
+
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Cor de fundo escura */
+  display: none;
+  z-index: 1;
+  transition: opacity 0.3s ease;
+}
+
+#modal {
+  position: fixed;
+  bottom: -100%; /* Inicialmente fora da tela */
+  left: 0;
+  width: 100%;
+  background-color: #19404c;
+  border-radius: 8px 8px 0 0;
+  z-index: 2;
+  transition: bottom 0.5s ease;
+}
+
+#modal-content {
+  padding: 10px 20px 40px 20px;
+  border-radius: 12px 12px 0 0;
+}
+
+#close-modal{
+  text-align: right;
+}
+
+.link-modal{
+  text-decoration: none;
+  background-color: #3ecef1;
+  border-radius: 8px;
+  padding: 10px 20px;
+  color: #00171d;
+}
+
+.hidden {
+  display: none;
+}
+
+#link-over-video{
+  text-decoration: none;
+  background-color: #3ecef1;
+  border-radius: 8px;
+  padding: 10px 20px;
+  color: #00171d;
+  display: none;
+  width: 200px;
+  margin: 30px auto;
+
+  
 }
 
 

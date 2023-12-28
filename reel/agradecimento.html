@@ -17,21 +17,43 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="./css/agradecimento.css">
   <link rel="shortcut icon" type="imagex/png" href="../assets/perfil_sub.png">
+
+  <script src="https://www.youtube.com/iframe_api" defer></script>
+  <script src="./js/agradecimento.js" defer></script>
+
   <title>Imersivo no Inglês - Obrigado</title>
 </head>
 
 <body>
   <div class="container-agradecimento">
-    <h1>Parabéns</h1>
-    <p>
-      Você conseguiu garantir sua vaga
-      <br><br>
-      Para acelerar seus resultados você precisa construit uma base sólida!
-      <br><br>
-      Conheça nosso cronograma que vai te ajudar a construir uma base sólida no inglês
-    </p>
-    <div class="modal">
+    <div class="content-agradecimento">
+      <h1>Parabéns</h1>
+      <p>
+        Você conseguiu garantir sua <span class="span-azul">vaga</span>
+        <br><br>
+        Para acelerar seus <span class="span-azul">resultados</span> você precisa construir uma base sólida!
+        <br><br>
+        Conheça nosso <span class="span-azul">cronograma</span> que vai te ajudar a construir uma base sólida no inglês
+      </p>
 
+      <div id="video-container">
+        <iframe id="youtube-video" width="300px" height="530px"
+          src="https://www.youtube.com/embed/lYEdc355rQU?enablejsapi=1&muted=1" frameborder="0"
+          allowfullscreen></iframe>
+      </div>
+
+      <a id="link-over-video" href="https://seu-link.com">Quero meu desconto</a>
+
+      <div id="overlay"></div>
+
+      <div id="modal" class="hidden">
+        <div id="modal-content">
+          <span id="close-modal">&times;</span> <!-- Botão "X" para fechar o modal -->
+          <p>Tenha acesso ao <span class="span-azul">cronograma</span> com um <span class="span-azul">desconto</span>
+            especial por você ter chegado até aqui</p>
+          <a class="link-modal" href="https://seu-link.com">Quero meu desconto</a>
+        </div>
+      </div>
     </div>
   </div>
 
