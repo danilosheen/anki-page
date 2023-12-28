@@ -46,8 +46,6 @@ function closeModalFunction() {
   overlay.style.opacity = 0;
   modal.style.bottom = "-100%";
   botao.style.display = "block";
-  console.log(botao);
-  console.log(modal);
 
   setTimeout(function () {
     overlay.style.display = "none";
