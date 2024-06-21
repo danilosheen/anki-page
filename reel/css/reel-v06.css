@@ -140,6 +140,8 @@ input:-webkit-autofill {
   justify-content: center;
   text-align: center;
   padding-bottom: 30px;
+  max-width: 1350px;
+  margin: 0 auto;
 }
 
 /* texto reel */
