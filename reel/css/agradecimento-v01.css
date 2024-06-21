@@ -28,6 +28,7 @@
 .content-agradecimento {
   width: 90%;
   margin: 0 auto;
+  max-width: 600px;
 }
 
 .content-agradecimento h1 {
